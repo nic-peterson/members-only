@@ -1,8 +1,6 @@
 Rails.application.routes.draw do
   resources :posts, only: [:new, :create, :index]
-  get 'posts/new'
-  get 'posts/create'
-  get 'posts/index'
+
   devise_for :users
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
@@ -12,5 +10,5 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   # root "posts#index"
-  root to: "home#index"
+  root to: "posts#index"
 end
