@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :posts, only: [:new, :create, :index]
   get 'posts/new'
   get 'posts/create'
   get 'posts/index'
