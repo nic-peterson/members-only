@@ -65,3 +65,9 @@ group :test do
   gem "capybara"
   gem "selenium-webdriver"
 end
+
+# Add Devise for authentication
+gem 'devise'
+
+# Add Responders to handle responses in your application
+gem 'responders'
